@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>JulianoEscola</title>
+ <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+ <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="reset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+<header class="cabeçalho">
+
+ <div class="container">
+
+    <input type="checkbox" id="menu" class="container__botao">
+<label for="menu">
+ <span class="cabeçalho__menu-hamburguer container__imagem "></span>
+</label>
+<ul class="lista-menu">
+<li class="lista-menu__titulo">Categorias</li>
+<li class="lista-menu__item">
+    <a href="#" class="lista-menu__link">Nike</a>
+    <li class="lista-menu__item">
+        <a href="#" class="lista-menu__link">Puma</a> 
+        <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Tesla</a> 
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Entre outros</a> 
+
+</ul>
+
+ <img src="img/Logo.svg" alt="Logo do site" class="container__imagem ">
+</div>
+
+
+<div class="container">
+
+ <a href="#"> <img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem "> </a>
+ <a href="#"> <img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem "></a>
+ <a href="#"> <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem "></a>
+
+</div>
+
+</header>
+<section class="banner">
+    <h2 class="banner__titulo">Sapato</h2>
+    <p class="banner__texto">Participe de sorteios </p>
+    <input type="search" class="banner__pesquisa" placeholder="Pesquise aqui seu jogo">
+</section>
+<section class="carrossel">
+
+
+<h2 class="carrossel__titulo">Novos Lançamentos</h2>
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+   <!-- If we need pagination -->
+   <div class="swiper-pagination"></div>
+
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img class="T1" src="img/T1.jpg" alt=""></div>
+      <div class="swiper-slide"><img class="T2"  src="img/T2.jpeg" alt=""></div>
+      <div class="swiper-slide"><img class="T3" src="img/T3.jpeg" alt=""></div>
+      <div class="swiper-slide"><img class="T4" src="img/T4.jpeg" alt=""></div>
+      <div class="swiper-slide"><img class="T5" src="img/T5.jpeg" alt=""></div>
+      ...
+    </div>
+ 
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+
+ <div class="card">
+    <!-- 1 linha -->
+   <div class="card__descrição">
+<!-- 1 coluna -->
+     <div class="descrição">
+      <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+      <h2 class="descrição__titulo-livro">Tesla Roxo Com Preto</h2>
+      <p class="descrição__texto">Tênis com mola e alta qualidade, tecido resistente a água</p>
+    
+    </div>
+    <!-- 2 coluna -->
+    <img src="img/T6.jpeg" class="descrição__imagem">
+   </div>
+
+   <!-- 2 linha -->
+   <div class="card__botões">
+    <!--1 coluna -->
+    <ul class="botões">
+      <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar jogo" > </li>
+      <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar para jogar mais tarde" > </li>
+    </ul>
+    <!-- 2 coluna -->
+    <a href="#" class="botões__ancora">Comprar</a>
+
+
+
+   </div>
+   
+ </div>
+
+</section>
+
+<section class="tópicos">
+  <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+  <ul class="tópicos__lista">
+    <li class="tópicos__item">
+
+      <a href="#" class="tópicos__link">Tesla</a>
+
+    </li>
+    <li class="tópicos__item">
+      
+      <a href="#" class="tópicos__link">Tênis</a>
+      <li class="tópicos__item">
+      
+        <a href="#" class="tópicos__link">Esportivo</a>
+
+        <li class="tópicos__item">
+      
+          <a href="#" class="tópicos__link">Têsnis Brancos</a>
+
+          <li class="tópicos__item">
+      
+            <a href="#" class="tópicos__link">Jordan</a>
+      
+          </li>
+    
+        </li>
+  
+      </li>
+
+    </li>
+  </ul>
+</section>
+
+<section class="contato">
+<div class="contato__descrição">
+  <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+  <p class=”contato__texto”>Atualização de marcas, novos tênis, promoções e outros</p>
+</div>
+  <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+
+
+</section>
+
+<hr/>
+
+<footer class="rodapé">
+  <h2 class="rodapé__titulo">Tênis online</h2>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  spaceBetween: 10,
+  slidesPerView: 2,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+
+});
+</script>
+</body>
+
+</html>
